@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        margin: 0px;
+        background-color: black;
+    }
+    .main{
+        margin: 100px;
+        margin-left: 200px;
+        transition: transform 1s;
+    }
+button{
+    width: 120px;
+    cursor: pointer;
+    background-color: crimson;
+    border: none;
+    margin: 2px;
+    padding: 12px 12px;
+}
+    img{
+        width: 200px;
+        }
+
+
+.Rotate:hover~.main{
+    transform: rotate(30deg);
+
+}
+.Skew:hover~.main {
+    transform: skew(20deg);
+}
+.Scale:hover~.main {
+    transform: scaleX(1.5);
+}
+.Transition:hover~.main{
+
+    transform: translate(20px, 30px);
+}
+
+h1{
+   color: aliceblue;
+}
+</style>   
+</head>
+<body>
+    <center>
+    <h1>TRANSITION</h1>
+    <div>
+        <button class="Rotate">Rotate</button>
+    <button class="Skew">Skew</button>
+    <button class="Scale">Scale</button>
+    <button class="Transition">Transition</button>
+    
+    <div class="main">
+      <img src="https://images.pexels.com/photos/16762876/pexels-photo-16762876/free-photo-of-flowers-in-glasses-with-water.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+    </div>
+</div>
+</center>
+      
+</body>
+</html>
